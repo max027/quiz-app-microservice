@@ -14,30 +14,7 @@ public class Quiz {
 
     private String title;
 
-    @ManyToMany
-    private List<Question>questions;
+    @ElementCollection
+    private List<Integer>questions;
 
-    public int getQuiz_id() {
-        return quiz_id;
-    }
-
-    public void setQuiz_id(int quiz_id) {
-        this.quiz_id = quiz_id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public List<Question> getQuestions() {
-        return questions;
-    }
-
-    public void setQuestions(List<Question> questions) {
-        this.questions = questions;
-    }
 }
